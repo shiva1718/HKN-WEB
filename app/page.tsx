@@ -1,6 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
+import Blog from "components/Event";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <>
+
             <ScrollUp/>
             <Hero/>
             {/*<Features />*/}
@@ -32,7 +33,7 @@ export default function Home() {
             <NuEtaSectionOne/>
             <Members/>
             {/*<Pricing />*/}
-            {/*<Blog />*/}
+            {/*<Event />*/}
             <Contact/>
         </>
     );
