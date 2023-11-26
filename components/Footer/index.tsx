@@ -14,20 +14,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                  {/*<Image*/}
-                  {/*  src="/images/logo/3.png"*/}
-                  {/*  alt="logo"*/}
-                  {/*  className="w-full dark:hidden"*/}
-                  {/*  width={70}*/}
-                  {/*  height={15}*/}
-                  {/*/>*/}
-                  {/*<Image*/}
-                  {/*  src="/images/logo/3.png"*/}
-                  {/*  alt="logo"*/}
-                  {/*  className="hidden w-full dark:block"*/}
-                  {/*  width={70}*/}
-                  {/*  height={15}*/}
-                  {/*/>*/}
+
                   <img className="hidden w-full dark:block" style={{width:125}} src="/images/logo/3.png"/>
                   <img className="w-full dark:hidden" style={{width:125}} src="/images/logo/3-dark.png"/>
                 </Link>
@@ -147,15 +134,7 @@ const Footer = () => {
                       sechkn@sairam.edu.in
                     </a>
                   </li>
-                  {/*<li>*/}
-                  {/*  <h3>Faculty Advisor</h3>*/}
-                  {/*  <a*/}
-                  {/*    href="#"*/}
-                  {/*    className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"*/}
-                  {/*  >*/}
-                  {/*    abc@gmail.com*/}
-                  {/*  </a>*/}
-                  {/*</li>*/}
+
                 </ul>
               </div>
             </div>
@@ -165,7 +144,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              IEEE HKN Society, 2023
+              IEEE HKN Nu Eta Chapter, {new Date().getFullYear()}
             </p>
           </div>
         </div>

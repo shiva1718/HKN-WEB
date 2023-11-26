@@ -89,7 +89,7 @@ const studentMembers: Testimonial[] = [
     designation: "Public Relations Director",
     content:
         "TBD",
-    image: "/images/members/Jaiakash S_.jpg",
+    image: "/images/members/Jaiakash.jpg",
 
   },
   {
