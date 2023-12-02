@@ -22,13 +22,8 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
       <div className="w-full">
         <div
-            className="wow fadeInUp shadow-two dark:shadow-three dark:hover:shadow-gray-dark rounded-sm bg-white p-8 duration-300 hover:shadow-one dark:bg-dark lg:px-5 xl:px-8"
-            data-wow-delay=".1s"
+            className="shadow-two dark:shadow-three dark:hover:shadow-gray-dark rounded-sm bg-white p-8 duration-300 hover:shadow-one dark:bg-dark lg:px-5 xl:px-8"
         >
-          {/*<div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>*/}
-          {/*<p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">*/}
-          {/*  “{content}*/}
-          {/*</p>*/}
           <div className="flex items-center">
             <div className="relative mr-4 h-[100px] w-full max-w-[100px] overflow-hidden rounded-full">
               <Image src={image} alt={name} fill />
@@ -61,15 +56,6 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
                         aria-label="social-link"
                         className="dark:text-body-color-dark text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                        {/*<svg*/}
-
-                        {/*    // width="17"*/}
-                        {/*    // height="16"*/}
-                        {/*    // // // viewBox="0 0 17 16"*/}
-                        {/*    // className="fill-current"*/}
-                        {/*>*/}
-                        {/*    <path d="M7.05,0H115.83a7.07,7.07,0,0,1,7,7.05V81.81a7,7,0,0,1-1.22,4,2.78,2.78,0,0,1-.66,1,2.62,2.62,0,0,1-.66.46,7,7,0,0,1-4.51,1.65H7.05a7.07,7.07,0,0,1-7-7V7.05A7.07,7.07,0,0,1,7.05,0Zm-.3,78.84L43.53,40.62,6.75,9.54v69.3ZM49.07,45.39,9.77,83.45h103L75.22,45.39l-11,9.21h0a2.7,2.7,0,0,1-3.45,0L49.07,45.39Zm31.6-4.84,35.46,38.6V9.2L80.67,40.55ZM10.21,5.41,62.39,47.7,112.27,5.41Z" />*/}
-                        {/*</svg>*/}
                    
                       <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -84,14 +70,8 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
                           >
                             <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM8 6l4 3 4-3"></path>
                       </svg>
-                      
-{/*                         <img className="social" src="/images/logo/gmail_logo.svg" alt=""/> */}
                     </a>
-
-
-
                 </div>
-
             </div>
           </div>
         </div>

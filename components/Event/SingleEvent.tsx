@@ -7,8 +7,7 @@ const SingleEvent = ({ event }: { event: Event }) => {
   return (
     <>
       <div
-        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
-        data-wow-delay=".1s"
+        className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
       >
         <Link
           href="/#"

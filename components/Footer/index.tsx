@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
-        data-wow-delay=".1s"
+        className="dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">

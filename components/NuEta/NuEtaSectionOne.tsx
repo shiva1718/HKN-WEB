@@ -32,8 +32,7 @@ const NuEtaSectionOne = () => {
                   />
 
                   <div
-                      className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                      data-wow-delay=".15s"
+                      className="mb-12 max-w-[570px] lg:mb-0"
                   >
 
                   </div>
@@ -41,42 +40,20 @@ const NuEtaSectionOne = () => {
 
                 <div className="w-full px-4 lg:w-1/2">
                   <div
-                      className="wow fadeInUp relative mx-auto aspect-[25/24] lg:mr-0"
-                      data-wow-delay=".2s"
+                      className="relative mx-auto aspect-[25/24] lg:mr-0"
                   >
                     <Image src={"/images/sairam-nu-eta.jpeg"}
                            alt={"Nu Eta Chapter"}
                            fill
                            className={"drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"}/>
-                    {/*<Image*/}
-                    {/*  src="/images/about/group.svg"*/}
-                    {/*  alt="about-image"*/}
-                    {/*  fill*/}
-                    {/*  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"*/}
-                    {/*/>*/}
-                    {/*<Image*/}
-                    {/*  src="/images/about/group.svg"*/}
-                    {/*  alt="about-image"*/}
-                    {/*  fill*/}
-                    {/*  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"*/}
-                    {/*/>*/}
                   </div>
                 </div>
 
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w">
-
-            <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-            >
-            </div>
-          </div>
         </section>
         <div>
-
           <h2 className={"mb-4 text-3xl font-bold !leading-tight text-black text-center dark:text-white sm:text-4xl md:text-[45px]"}>VISION
             & MISSION</h2>
           <div

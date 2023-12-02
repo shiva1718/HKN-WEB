@@ -31,8 +31,7 @@ const AboutSectionOne = () => {
               />
 
               <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
+                className="mb-12 max-w-[570px] lg:mb-0"
               >
                 {/*<div className="mx-[-12px] flex flex-wrap">*/}
                 {/*  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">*/}
@@ -52,8 +51,7 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] lg:mr-0"
-                data-wow-delay=".2s"
+                className="relative mx-auto aspect-[25/24] lg:mr-0"
               >
                 <Image
                   src={"/images/college-image1.webp"}

@@ -8,8 +8,7 @@ const AboutSectionTwo = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/20] w-auto text-center lg:m-0"
-              data-wow-delay=".15s"
+              className="relative mx-auto mb-12 aspect-[25/20] w-auto text-center lg:m-0"
             >
               <Image
                 src="/images/about/SUMMA-black.png"
@@ -26,9 +25,8 @@ const AboutSectionTwo = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
+            <div className="max-w-[470px]">
               <div className="mb-9">
-
                 <p className="text-xl font-medium leading-relaxed text-black text-justify sm:leading-relaxed">
                   Sri Sairam Engineering College, Chennai was established in the year 1995 by MJF. Ln. LeoMuthu,
                   Chairman of Sapthagiri Educational Trust. Our Institution is an Autonomous Institution, affiliated to
