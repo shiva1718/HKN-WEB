@@ -17,7 +17,6 @@ const Event = () => {
         pageName="Events"
         description=""
       />
-
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">

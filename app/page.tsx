@@ -11,10 +11,12 @@ import Members from "@/app/members/page";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import NuEtaSectionOne from "@/components/NuEta/NuEtaSectionOne";
+import anime from 'animejs/lib/anime.es.js';
 
 export const metadata: Metadata = {
   title: "SEC IEEE HKN",
   description: "SEC IEEE HKN Description",
+
   // other metadata
 };
 

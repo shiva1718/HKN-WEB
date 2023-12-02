@@ -1,6 +1,23 @@
 import Link from "next/link";
 // dark:bg-gray-dark
+import {useEffect} from "react";
+
+import anime from "animejs";
+
 const Hero = () => {
+  useEffect(() => {
+    const target = document.querySelector(".animate-fade-in");
+    anime({
+      targets: target,
+      opacity: 1,
+      duration: 500,
+      easing: 'easeInOutQuad',
+      complete: function() {
+        target.classList.add('is-active');
+      }
+    });
+  });
+
   return (
       <>
         <section
@@ -13,7 +30,7 @@ const Hero = () => {
                 <div
                     className="mx-auto max-w-[900px] text-center"
                 >
-                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  <h1 className="animate-fade-in mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                     IEEE HKN (Eta Kappu Nu) <br/> SRI SAIRAM ENGINEERING COLLEGE
                   </h1>
                   <p className="font-bold dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-dark md:text-5xl">
