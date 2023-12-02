@@ -1,8 +1,8 @@
-import { Testimonial } from "@/types/testimonial";
+import { Members } from "@/types/members";
 import SectionTitle from "../../components/Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+import SingleMember from "./SingleMember";
 
-const professionalMembers: Testimonial[] = [
+const professionalMembers: Members[] = [
   {
     id: 1,
     name: "Dr. Sai Prakash Leomuthu",
@@ -22,7 +22,7 @@ const professionalMembers: Testimonial[] = [
     //
   },
 ];
-const studentMembers: Testimonial[] = [
+const studentMembers: Members[] = [
   {
     id: 1,
     name: "Dineshkumar S",
@@ -132,8 +132,8 @@ const Testimonials = () => {
           Professional Members
         </p>
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {professionalMembers.map((testimonial) => (
-              <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {professionalMembers.map((member) => (
+              <SingleMember key={member.id} member={member} />
           ))}
         </div>
         <br/>
@@ -143,8 +143,8 @@ const Testimonials = () => {
           Student Members
         </p>
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {studentMembers.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {studentMembers.map((member) => (
+            <SingleMember key={member.id} member={member} />
           ))}
         </div>
       </div>

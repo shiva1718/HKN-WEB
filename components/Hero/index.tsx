@@ -5,18 +5,6 @@ import {useEffect} from "react";
 import anime from "animejs";
 
 const Hero = () => {
-  useEffect(() => {
-    const target = document.querySelector(".animate-fade-in");
-    anime({
-      targets: target,
-      opacity: 1,
-      duration: 500,
-      easing: 'easeInOutQuad',
-      complete: function() {
-        target.classList.add('is-active');
-      }
-    });
-  });
 
   return (
       <>

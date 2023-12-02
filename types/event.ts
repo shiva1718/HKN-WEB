@@ -11,5 +11,5 @@ export type Event = {
   image: string;
   venue: Venue;
   tags: string[];
-  publishDate: string;
+  date: string;
 };

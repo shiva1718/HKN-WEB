@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleEvent = ({ event }: { event: Event }) => {
-  const { title, image, paragraph, venue, tags, publishDate } = event;
+  const { title, image, paragraph, venue, tags, date } = event;
   return (
     <>
       <div
@@ -48,7 +48,7 @@ const SingleEvent = ({ event }: { event: Event }) => {
               <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
                 Date
               </h4>
-              <p className="text-xs text-body-color">{publishDate}</p>
+              <p className="text-xs text-body-color">{date}</p>
             </div>
           </div>
         </div>

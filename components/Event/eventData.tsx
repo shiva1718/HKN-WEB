@@ -1,6 +1,6 @@
 import { Event } from "@/types/event";
 
-const blogData: Event[] = [
+const eventData: Event[] = [
   {
     id: 1,
     title: "Event 1",
@@ -13,7 +13,7 @@ const blogData: Event[] = [
       location: "Sri Sairam Engineering College, Chennai, Tamil Nadu",
     },
     tags: ["computer"],
-    publishDate: "September 29th 2023",
+    date: "September 29th 2023",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const blogData: Event[] = [
       location: "Varadharajapuram, Tamil Nadu",
     },
     tags: [""],
-    publishDate: "November 3rd 2023",
+    date: "November 3rd 2023",
   },
   // {
   //   id: 3,
@@ -44,4 +44,4 @@ const blogData: Event[] = [
   //   publishDate: "2025",
   // },
 ];
-export default blogData;
+export default eventData;
