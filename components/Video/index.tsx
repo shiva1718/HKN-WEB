@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
-import NuEtaSectionOne from "@/components/NuEta/NuEtaSectionOne";
 // bg-[url('/images/hero/landing-page.jpg')] bg-cover
 
 const Video = () => {
