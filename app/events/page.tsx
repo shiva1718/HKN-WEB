@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "",
+  description: "List  of all events conducted by SEC IEEE HKN",
   // other metadata
 };
 
