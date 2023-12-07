@@ -8,7 +8,8 @@ export type Event = {
   id: number;
   title: string;
   paragraph: string;
-  image: string;
+  cover_image: string;
+  main_image: string;
   venue: Venue;
   tags: string[];
   date: string;

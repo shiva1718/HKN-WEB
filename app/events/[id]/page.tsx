@@ -2,10 +2,10 @@ import SharePost from "@/components/Event/SharePost";
 import TagButton from "@/components/Event/TagButton";
 import Image from "next/image";
 import eventData from "@/components/Event/eventData";
-import { GetStaticProps, GetStaticPaths  } from 'next';
+import React from "react";
 
 import { Metadata } from "next";
-import {router} from "next/client";
+import {useRouter} from "next/router";
 
 export const metadata: Metadata = {
   title: "Nu Eta Chapter Inauguration",
@@ -14,10 +14,11 @@ export const metadata: Metadata = {
 };
 
 
+export default function Page({params}: { params: { id: string; } }) {
+  const eventID: number = parseInt(params.id);
 
-const BlogDetailsPage = () => {
-  let id = parseInt(router.query.id as string);
-  console.log(id);
+  // let id = parseInt(router.query.id as string);
+  console.log(eventID);
   return (
       <>
         <section className="pb-[120px] pt-[150px]">
@@ -26,24 +27,15 @@ const BlogDetailsPage = () => {
               <div className="w-full px-4 lg:w-8/12">
                 <div>
                   <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                    {eventData[id - 1].paragraph}
+                    {eventData[eventID - 1].title}
                   </h2>
                   <div
                       className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                     <div className="flex flex-wrap items-center">
                       <div className="mb-5 mr-10 flex items-center">
-                        <div className="mr-4">
-                          <div className="relative h-10 w-10 overflow-hidden rounded-full">
-                            <Image
-                                src="/images/blog/author-02.png"
-                                alt="author"
-                                fill
-                            />
-                          </div>
-                        </div>
                         <div className="w-full">
                         <span className="mb-1 text-base font-medium text-body-color">
-                          From {eventData[id - 1].venue.location}
+                          From {eventData[eventID - 1].venue.location}
                         </span>
                         </div>
                       </div>
@@ -76,7 +68,7 @@ const BlogDetailsPage = () => {
                                 d="M13.2637 3.3697H7.64754V2.58105C8.19721 2.43765 8.62738 1.91189 8.62738 1.31442C8.62738 0.597464 8.02992 0 7.28906 0C6.54821 0 5.95074 0.597464 5.95074 1.31442C5.95074 1.91189 6.35702 2.41376 6.93058 2.58105V3.3697H1.31442C0.597464 3.3697 0 3.96716 0 4.68412V13.2637C0 13.9807 0.597464 14.5781 1.31442 14.5781H13.2637C13.9807 14.5781 14.5781 13.9807 14.5781 13.2637V4.68412C14.5781 3.96716 13.9807 3.3697 13.2637 3.3697ZM6.6677 1.31442C6.6677 0.979841 6.93058 0.716957 7.28906 0.716957C7.62364 0.716957 7.91042 0.979841 7.91042 1.31442C7.91042 1.649 7.64754 1.91189 7.28906 1.91189C6.95448 1.91189 6.6677 1.6251 6.6677 1.31442ZM1.31442 4.08665H13.2637C13.5983 4.08665 13.8612 4.34954 13.8612 4.68412V6.45261H0.716957V4.68412C0.716957 4.34954 0.979841 4.08665 1.31442 4.08665ZM13.2637 13.8612H1.31442C0.979841 13.8612 0.716957 13.5983 0.716957 13.2637V7.16957H13.8612V13.2637C13.8612 13.5983 13.5983 13.8612 13.2637 13.8612Z"/>
                           </svg>
                         </span>
-                          {eventData[id - 1].date}
+                          {eventData[eventID - 1].date}
                         </p>
                         <p className="flex items-center text-base font-medium text-body-color">
                         <span className="mr-3">
@@ -101,7 +93,7 @@ const BlogDetailsPage = () => {
                     <div className="mb-10 w-full overflow-hidden rounded">
                       <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                         <Image
-                            src="/images/events/inauguaration.jpg"
+                            src={eventData[eventID - 1].main_image}
                             alt="image"
                             fill
                             className="object-cover object-center"
@@ -109,17 +101,7 @@ const BlogDetailsPage = () => {
                       </div>
                     </div>
                     <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                      On September 29, 2023, the IEEE HKN Nu Eta Chapter was inaugurated at Sri Sairam Engineering
-                      College in Chennai, India. The ceremony began with a prayer song and the lighting of the
-                      Kuthuvilakku. Dr. Sai Prakash Leo Muthu, Chairman & CEO of Sairam Institutions, gave the welcome
-                      address, followed by felicitation of the Chief Guests. Mr. Sampathkumar Veeraraghavan, Global
-                      President of IEEE Eta Kappa Nu and 2023 IEEE HTB Partnership Chair, delivered a keynote address on
-                      the role of IEEE HKN in shaping the future of technology. Dr. Prokumaran, Chairman IEEE Madras
-                      Section and Principal, Sri Sairam Engineering College, gave a special address on the importance of
-                      establishing HKN chapters. The highlight of the ceremony was the induction of the IEEE HKN Nu Eta
-                      Founding Members. A fireside chat with IEEE Global Leaders followed, with a discussion on the role
-                      of IEEE in advancing technology for the betterment of society, the challenges and opportunities in
-                      the field of engineering, and the importance of global collaboration in technological advancement.
+                      {eventData[eventID - 1].paragraph}
                     </p>
                   </div>
                 </div>
@@ -131,4 +113,3 @@ const BlogDetailsPage = () => {
   );
 };
 
-export default BlogDetailsPage;
