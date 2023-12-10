@@ -16,8 +16,8 @@ const eventData: Event[] = [
         "                      Founding Members. A fireside chat with IEEE Global Leaders followed, with a discussion on the role\n" +
         "                      of IEEE in advancing technology for the betterment of society, the challenges and opportunities in\n" +
         "                      the field of engineering, and the importance of global collaboration in technological advancement.",
-    cover_image: "/images/events/02.jpg",
-    main_image: "/images/events/inauguaration.jpg",
+    cover_image: "/images/events/1/cover-image.jpg",
+    main_image: "/images/events/1/inauguaration.jpg",
     venue: {
       name: "Sigma Stadium",
       image: "/images/events/location-icon.jpg",
@@ -31,8 +31,8 @@ const eventData: Event[] = [
     title: "Field Exploration & Household Survey",
     paragraph:
         "On November 3, 2023, the members of IEEE HKN Nu Eta Chapter, along with members of Sairam Unnat Bharat Abhiyan, conducted a village survey to one of the adopted villages of Sri Sairam Engineering College, Varadharajapuram. The students were divided into teams and conducted a survey of the village people, identifying all the societal and communal problems they faced. The primary purpose of this survey was to provide engineering and technological solutions to these problems and implement those projects after receiving funding from IEEE. Implementing these projects will be highly beneficial to the village residents.",
-    cover_image: "/images/events/event1.jpg",
-    main_image: "/images/events/event2-main.jpg",
+    cover_image: "/images/events/2/event1.jpg",
+    main_image: "/images/events/2/event2-main.jpg",
     venue: {
       name: "Adopted Village",
       image: "/images/events/location-icon.jpg",
