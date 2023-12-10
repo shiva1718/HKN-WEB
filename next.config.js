@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", "https://happy-sky-02a622900.4.azurestaticapps.net/"],
     remotePatterns: [
       {
         protocol: "https",
