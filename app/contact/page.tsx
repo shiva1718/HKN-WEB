@@ -15,7 +15,6 @@ const ContactPage = () => {
         pageName="Contact"
         description="Where voices unite and connections thrive - let's build our community together."
       />
-
       <Contact />
     </>
   );
