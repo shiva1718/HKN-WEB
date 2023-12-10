@@ -2,14 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ["localhost", "https://happy-sky-02a622900.4.azurestaticapps.net/"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        port: "",
-      },
-    ],
+    domains: ["localhost", "happy-sky-02a622900.4.azurestaticapps.net"],
   },
 };
 
