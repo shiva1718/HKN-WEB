@@ -7,7 +7,7 @@ const SingleEvent = ({ event }: { event: Event }) => {
   return (
       <>
         <div
-            className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
+            className="hover:shadow-two dark:hover:shadow-gray-dark group relative rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
         >
           <Link
               href={"/events/" + event.id}
@@ -23,7 +23,7 @@ const SingleEvent = ({ event }: { event: Event }) => {
               <div
                   className="mr-5 flex items-center border-r border-body-color border-opacity-10 pr-5 dark:border-white dark:border-opacity-10 xl:mr-3 xl:pr-3 2xl:mr-5 2xl:pr-5">
                 <div className="mr-4">
-                  <div className="relative h-10 w-10 overflow-hidden rounded-full">
+                  <div className="relative h-10 w-10 rounded-full">
                     <Image className={"object-cover overflow:hidden"} src={venue.image} alt="author" fill/>
                   </div>
                 </div>
