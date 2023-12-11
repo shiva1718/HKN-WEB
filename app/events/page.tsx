@@ -11,28 +11,30 @@ export const metadata: Metadata = {
 };
 
 const Event = () => {
-  return (
-    <>
-      <Breadcrumb
-        pageName="Events"
-        description=""
-      />
-      <section className="pb-[120px] pt-[120px]">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            {eventsData.map((event) => (
-              <div
-                key={event.id}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-              >
-                <SingleEvent event={event} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+    return (
+        <>
+            <Breadcrumb
+                pageName="Events"
+                description=""
+            />
+            <section className="pb-[120px] pt-[120px]">
+                <div className="container">
+                    <div className="-mx-4 flex flex-wrap justify-center">
+                        {eventsData.map((event) => (
+                            <a
+                                href={"/events/" + event.id}
+                                key={event.id}
+                                className="hover:scale-110 w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
+
+                            >
+                                <SingleEvent event={event}/>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 };
 
 export default Event;
