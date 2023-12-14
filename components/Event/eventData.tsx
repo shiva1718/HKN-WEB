@@ -53,12 +53,12 @@ const eventData: Event[] = [
     cover_image: "/images/events/3/event3-cover.png",
     main_image: "/images/events/3/event3-main.png",
     venue: {
-      name: "Adopted Village",
+      name: "Sri Sairam Engineering College",
       image: "/images/events/location-icon.jpg",
-      location: "Varadharajapuram, Tamil Nadu",
+      location: "Chennai",
     },
     tags: [""],
-    date: "November 3rd 2023",
+    date: "November 30th 2023",
   }
 ];
 export default eventData;
