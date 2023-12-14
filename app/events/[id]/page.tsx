@@ -18,7 +18,6 @@ export default function Page({params}: { params: { id: string; } }) {
   const eventID: number = parseInt(params.id);
 
   // let id = parseInt(router.query.id as string);
-  console.log(eventID);
   return (
       <>
         <section className="pb-[120px] pt-[150px]">
@@ -96,13 +95,13 @@ export default function Page({params}: { params: { id: string; } }) {
                             src={eventData[eventID - 1].main_image}
                             alt="image"
                             fill
-                            className="object-cover object-center"
+                            className="object-contain object-center"
                         />
                       </div>
                     </div>
-                    <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                      {eventData[eventID - 1].paragraph}
-                    </p>
+                    <div className=""
+                         dangerouslySetInnerHTML={{__html: eventData[eventID - 1].paragraph}}>
+                    </div>
                   </div>
                 </div>
               </div>
